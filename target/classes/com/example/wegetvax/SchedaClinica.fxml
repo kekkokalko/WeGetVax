@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wegetvax.Controllers.SchedaClinicaController">
+   <children>
+      <AnchorPane layoutX="1.0" prefHeight="800.0" prefWidth="988.0" style="-fx-background-color: WHITE;">
+         <children>
+            <Button fx:id="prenotazione" layoutX="106.0" layoutY="636.0" mnemonicParsing="false" onAction="#reservation" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #357EC7;" text="Prenotazione" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="anamnesi" layoutX="414.0" layoutY="636.0" mnemonicParsing="false" onAction="#anamnesis" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #357EC7;" text="Anamnesi" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="vaccinazione" layoutX="724.0" layoutY="636.0" mnemonicParsing="false" onAction="#vaccination" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #357EC7;" text="Vaccinazione" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOut" layoutX="761.0" layoutY="236.0" mnemonicParsing="false" onAction="#log_out" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #FF0000;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <VBox layoutX="-12.0" prefHeight="124.0" prefWidth="1005.0" style="-fx-background-color: #045F5F;" />
+            <ImageView fitHeight="170.0" fitWidth="169.0" layoutX="395.0" layoutY="124.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icone/Logo.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="230.0" fitWidth="222.0" layoutX="83.0" layoutY="314.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icone/user1.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="339.0" layoutY="325.0" prefHeight="17.0" prefWidth="237.0" text="Informazioni:" textFill="#357ec7">
+               <font>
+                  <Font size="16.0" />
+               </font>
+            </Label>
+            <Label fx:id="nome" layoutX="339.0" layoutY="358.0" prefHeight="17.0" prefWidth="237.0" textFill="#357ec7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="cognome" layoutX="339.0" layoutY="392.0" prefHeight="17.0" prefWidth="237.0" textFill="#357ec7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="codice_fiscale" layoutX="339.0" layoutY="425.0" prefHeight="17.0" prefWidth="237.0" textFill="#357ec7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Label fx:id="tessera_sanitaria" layoutX="339.0" layoutY="461.0" prefHeight="17.0" prefWidth="237.0" textFill="#357ec7">
+               <font>
+                  <Font name="System Bold" size="14.0" />
+               </font></Label>
+            <Button fx:id="Indietro" layoutX="761.0" layoutY="187.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: GREY;" text="Indietro" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="user" layoutX="753.0" layoutY="148.0" prefHeight="18.0" prefWidth="194.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="434.0" layoutY="778.0" prefHeight="17.0" prefWidth="168.0" text="© 2022 - Francesco Calcopietro" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wegetvax.Controllers.AnamnesiMContreoller">
+   <children>
+      <AnchorPane layoutX="3.0" layoutY="3.0" prefHeight="800.0" prefWidth="986.0">
+         <children>
+            <VBox layoutX="-8.0" layoutY="-10.0" prefHeight="124.0" prefWidth="1005.0" style="-fx-background-color: #045F5F;" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="174.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icone/Logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="inserisci" layoutX="376.0" layoutY="578.0" mnemonicParsing="false" onAction="#conferma" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #357EC7;" text="Inserisci" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="indietro" layoutX="737.0" layoutY="203.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: GREY;" text="Indietro" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="user" layoutX="754.0" layoutY="137.0" prefHeight="18.0" prefWidth="160.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="codice_fiscale" layoutX="72.0" layoutY="427.0" prefHeight="25.0" prefWidth="177.0" />
+            <TextField fx:id="luogo" layoutX="536.0" layoutY="427.0" prefHeight="25.0" prefWidth="177.0" />
+            <ImageView fitHeight="150.0" fitWidth="137.0" layoutX="505.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icone/anamnesi.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="72.0" layoutY="392.0" prefHeight="17.0" prefWidth="177.0" text="Codice Fiscale" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="302.0" layoutY="392.0" prefHeight="17.0" prefWidth="177.0" text="Data" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="536.0" layoutY="392.0" prefHeight="17.0" prefWidth="177.0" text="Luogo " textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="759.0" layoutY="394.0" prefHeight="17.0" prefWidth="177.0" text="Esito" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="data" layoutX="302.0" layoutY="427.0" />
+            <ComboBox fx:id="esito" layoutX="759.0" layoutY="427.0" prefWidth="150.0" />
+            <Label fx:id="messaggio" layoutX="611.0" layoutY="474.0" prefHeight="44.0" prefWidth="296.0" textFill="RED" />
+            <Label fx:id="messaggio1" layoutX="611.0" layoutY="541.0" prefHeight="44.0" prefWidth="296.0" textFill="GREEN" />
+            <Button fx:id="logOut" layoutX="737.0" layoutY="258.0" mnemonicParsing="false" onAction="#log_out" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #FF0000;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="421.0" layoutY="769.0" prefHeight="17.0" prefWidth="168.0" text="© 2022 - Francesco Calcopietro" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

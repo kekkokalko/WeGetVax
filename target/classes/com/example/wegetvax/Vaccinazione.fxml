@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wegetvax.Controllers.VaccinazioneController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="1000.0">
+         <children>
+            <Button fx:id="indietro" layoutX="415.0" layoutY="726.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: GREY;" text="Indietro" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <VBox layoutX="-8.0" prefHeight="124.0" prefWidth="1013.0" style="-fx-background-color: #357EC7;" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="196.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icone/Logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="user" layoutX="790.0" layoutY="137.0" prefHeight="18.0" prefWidth="194.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="313.0" prefHeight="17.0" prefWidth="411.0" text="I tuoi certificati vaccinali:" textFill="#357ec7">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tabella" layoutX="21.0" layoutY="349.0" prefHeight="365.0" prefWidth="964.0">
+               <columns>
+                  <TableColumn fx:id="numero_dose" prefWidth="89.0" text="Numero Dose" />
+                  <TableColumn fx:id="nome_farmaco" prefWidth="95.0" text="Nome Farmaco" />
+                  <TableColumn fx:id="numero_lotto" prefWidth="94.0" text="Numero Lotto" />
+                  <TableColumn fx:id="data_scadenza" prefWidth="113.0" text="Data Scadenza" />
+                  <TableColumn fx:id="nome_medico" prefWidth="114.0" text="Nome Medico" />
+                  <TableColumn fx:id="data_somministrazione" prefWidth="145.0" text="Data Somministrazione" />
+                  <TableColumn fx:id="braccio_inoculatore" prefWidth="127.0" text="Braccio Inoculatore" />
+                  <TableColumn fx:id="nome_luogo" prefWidth="186.0" text="Nome Luogo" />
+               </columns>
+            </TableView>
+            <Button fx:id="logOut" layoutX="799.0" layoutY="186.0" mnemonicParsing="false" onAction="#log_out" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #FF0000;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="124.0" fitWidth="119.0" layoutX="591.0" layoutY="162.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icone/diploma.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="415.0" layoutY="778.0" prefHeight="17.0" prefWidth="168.0" text="© 2022 - Francesco Calcopietro" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

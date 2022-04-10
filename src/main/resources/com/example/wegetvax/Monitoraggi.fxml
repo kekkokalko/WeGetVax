@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wegetvax.Controllers.MonitoraggioController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="985.0">
+         <children>
+            <Button fx:id="indietro" layoutX="710.0" layoutY="711.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: GREY;" text="Indietro" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <VBox layoutX="-8.0" layoutY="-6.0" prefHeight="124.0" prefWidth="1000.0" style="-fx-background-color: #357EC7;" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="196.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icone/Logo.png" />
+               </image>
+            </ImageView>
+            <Label fx:id="user" layoutX="765.0" layoutY="137.0" prefHeight="18.0" prefWidth="194.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="24.0" layoutY="334.0" prefHeight="26.0" prefWidth="456.0" text="I tuoi monitoraggi:" textFill="#357ec7">
+               <font>
+                  <Font size="17.0" />
+               </font>
+            </Label>
+            <TableView fx:id="tabella" layoutX="24.0" layoutY="366.0" prefHeight="301.0" prefWidth="948.0">
+               <columns>
+                  <TableColumn fx:id="data" prefWidth="85.0" text="Data" />
+                  <TableColumn fx:id="temperatura" prefWidth="78.0" text="Temperatura" />
+                  <TableColumn fx:id="mal_di_gola" prefWidth="71.0" text="Mal di gola" />
+                  <TableColumn fx:id="mal_di_testa" prefWidth="78.0" text="Mal di testa" />
+                  <TableColumn fx:id="dolori_muscolari" prefWidth="102.0" text="Dolori muscolari" />
+                  <TableColumn fx:id="nausea" prefWidth="53.0" text="Nausea" />
+                  <TableColumn fx:id="situazione_psicologica" prefWidth="136.0" text="Situazione psicologica" />
+                  <TableColumn fx:id="tosse" prefWidth="110.0" text="Tosse" />
+                  <TableColumn fx:id="respirazione" prefWidth="117.0" text="Respirazione" />
+                  <TableColumn fx:id="frequenza_cardiaca" prefWidth="117.0" text="Frequenza cardiaca" />
+               </columns>
+            </TableView>
+            <Button fx:id="aggiungi" layoutX="120.0" layoutY="711.0" mnemonicParsing="false" onAction="#newReservation" prefHeight="44.0" prefWidth="345.0" style="-fx-background-radius: 30; -fx-background-color: #357EC7;" text="Aggiungi un nuovo monitoraggio" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="logOut" layoutX="804.0" layoutY="170.0" mnemonicParsing="false" onAction="#log_out" prefHeight="26.0" prefWidth="116.0" style="-fx-background-radius: 30; -fx-background-color: #FF0000;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <ImageView fitHeight="150.0" fitWidth="149.0" layoutX="561.0" layoutY="139.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icone/healthcare.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="421.0" layoutY="777.0" prefHeight="17.0" prefWidth="168.0" text="© 2022 - Francesco Calcopietro" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

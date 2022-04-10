@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wegetvax.Controllers.VaccinazioneMController">
+   <children>
+      <AnchorPane prefHeight="800.0" prefWidth="978.0">
+         <children>
+            <VBox layoutX="-8.0" layoutY="-10.0" prefHeight="124.0" prefWidth="1005.0" style="-fx-background-color: #045F5F;" />
+            <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="210.0" layoutY="172.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icone/Logo.png" />
+               </image>
+            </ImageView>
+            <Button fx:id="inserisci" layoutX="412.0" layoutY="632.0" mnemonicParsing="false" onAction="#conferma" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #357EC7;" text="Inserisci" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="indietro" layoutX="773.0" layoutY="203.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: GREY;" text="Indietro" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="user" layoutX="790.0" layoutY="137.0" prefHeight="18.0" prefWidth="160.0">
+               <font>
+                  <Font name="Calibri Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="codice_fiscale" layoutX="538.0" layoutY="400.0" prefHeight="25.0" prefWidth="177.0" />
+            <TextField fx:id="luogo" layoutX="760.0" layoutY="551.0" prefHeight="25.0" prefWidth="177.0" />
+            <Label layoutX="538.0" layoutY="365.0" prefHeight="17.0" prefWidth="177.0" text="Codice Fiscale" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="308.0" layoutY="521.0" prefHeight="17.0" prefWidth="177.0" text="Data Somministrazione" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="760.0" layoutY="521.0" prefHeight="17.0" prefWidth="177.0" text="Luogo " textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="data_somministrazione" layoutX="309.0" layoutY="551.0" />
+            <Label fx:id="messaggio" layoutX="85.0" layoutY="632.0" prefHeight="44.0" prefWidth="296.0" textFill="RED" />
+            <Label fx:id="messaggio1" layoutX="664.0" layoutY="632.0" prefHeight="44.0" prefWidth="296.0" textFill="GREEN" />
+            <Button fx:id="logOut" layoutX="773.0" layoutY="258.0" mnemonicParsing="false" onAction="#log_out" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #FF0000;" text="LogOut" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <TextField fx:id="nome" layoutX="88.0" layoutY="400.0" prefHeight="25.0" prefWidth="177.0" />
+            <TextField fx:id="cognome" layoutX="307.0" layoutY="400.0" prefHeight="25.0" prefWidth="177.0" />
+            <DatePicker fx:id="data_nascita" layoutX="761.0" layoutY="400.0" />
+            <TextField fx:id="numero_dose" layoutX="85.0" layoutY="475.0" prefHeight="25.0" prefWidth="177.0" />
+            <TextField fx:id="nome_farmaco" layoutX="307.0" layoutY="475.0" prefHeight="25.0" prefWidth="177.0" />
+            <TextField fx:id="numero_lotto" layoutX="538.0" layoutY="475.0" prefHeight="25.0" prefWidth="177.0" />
+            <DatePicker fx:id="data_scadenza" layoutX="761.0" layoutY="475.0" />
+            <TextField fx:id="nome_medico" layoutX="85.0" layoutY="551.0" prefHeight="25.0" prefWidth="177.0" />
+            <ImageView fitHeight="137.0" fitWidth="149.0" layoutX="545.0" layoutY="177.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../Icone/vaccinated.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="88.0" layoutY="367.0" text="Nome Vaccinando" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="309.0" layoutY="367.0" text="Cognome Vaccinando" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="759.0" layoutY="367.0" prefHeight="17.0" prefWidth="108.0" text="Data di Nascita" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="87.0" layoutY="447.0" text="Numero Dose" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="309.0" layoutY="447.0" text="Nome Farmaco" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="538.0" layoutY="447.0" text="Numero Lotto" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="761.0" layoutY="447.0" text="Data di Scadenza " textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="85.0" layoutY="523.0" text="Nome Medico" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label layoutX="541.0" layoutY="522.0" text="Braccio Inoculante" textFill="#357ec7">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <ComboBox fx:id="braccio_inoculante" layoutX="539.0" layoutY="551.0" prefHeight="25.0" prefWidth="177.0" />
+            <Label layoutX="411.0" layoutY="778.0" prefHeight="17.0" prefWidth="168.0" text="© 2022 - Francesco Calcopietro" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

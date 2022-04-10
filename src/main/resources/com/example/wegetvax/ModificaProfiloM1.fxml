@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wegetvax.Controllers.ModificaProfiloMController">
+   <children>
+      <Label fx:id="password_message" layoutX="132.0" layoutY="399.0" prefHeight="17.0" prefWidth="227.0" textFill="RED" />
+      <VBox prefHeight="124.0" prefWidth="1000.0" style="-fx-background-color: #045F5F;" />
+      <TextField fx:id="nome" layoutX="57.0" layoutY="174.0" />
+      <Label layoutX="59.0" layoutY="146.0" text="Nome" textFill="#357ec7" />
+      <TextField fx:id="cognome" layoutX="57.0" layoutY="253.0" />
+      <Label layoutX="57.0" layoutY="227.0" text="Cognome" textFill="#357ec7" />
+      <TextField fx:id="username" layoutX="55.0" layoutY="341.0" />
+      <Label layoutX="57.0" layoutY="306.0" text="Username" textFill="#357ec7" />
+      <Label layoutX="58.0" layoutY="399.0" text="Password" textFill="#357ec7" />
+      <Label layoutX="429.0" layoutY="398.0" text="Conferma Password" textFill="#357ec7">
+         <font>
+            <Font name="System Bold" size="13.0" />
+         </font>
+      </Label>
+      <PasswordField fx:id="password" layoutX="57.0" layoutY="429.0" />
+      <PasswordField fx:id="conferma_password" layoutX="429.0" layoutY="429.0" />
+      <Button layoutX="703.0" layoutY="518.0" mnemonicParsing="false" onAction="#back" prefHeight="49.0" prefWidth="156.0" style="-fx-background-radius: 30; -fx-background-color: GREY;" text="Indietro" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="Conferma" layoutX="92.0" layoutY="518.0" mnemonicParsing="false" onAction="#aggiorna" prefHeight="49.0" prefWidth="156.0" style="-fx-background-radius: 30; -fx-background-color: #357EC7;" text="Conferma" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="campi_mancanti" layoutX="667.0" layoutY="203.0" prefHeight="49.0" prefWidth="227.0" textFill="RED">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="corretto" layoutX="667.0" layoutY="306.0" prefHeight="35.0" prefWidth="227.0" textFill="GREEN">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="cancella_profilo" layoutX="343.0" layoutY="608.0" mnemonicParsing="false" onAction="#delete" prefHeight="49.0" prefWidth="315.0" style="-fx-background-radius: 30; -fx-background-color: RED;" text="CANCELLA PROFILO" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label layoutX="420.0" layoutY="783.0" prefHeight="17.0" prefWidth="168.0" text="© 2022 - Francesco Calcopietro" />
+   </children>
+</AnchorPane>

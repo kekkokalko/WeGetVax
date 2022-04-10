@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="800.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wegetvax.Controllers.NuovaPrenotazioneController">
+   <children>
+      <VBox layoutX="-4.0" prefHeight="124.0" prefWidth="1005.0" style="-fx-background-color: #357EC7;" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="104.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Icone/Logo.png" />
+         </image>
+      </ImageView>
+      <Button fx:id="inserisci" layoutX="496.0" layoutY="636.0" mnemonicParsing="false" onAction="#aggiungi" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #357EC7;" text="Inserisci" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button fx:id="indietro" layoutX="777.0" layoutY="182.0" mnemonicParsing="false" onAction="#back" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: GREY;" text="Indietro" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="user" layoutX="786.0" layoutY="147.0" prefHeight="18.0" prefWidth="160.0">
+         <font>
+            <Font name="Calibri Bold" size="15.0" />
+         </font>
+      </Label>
+      <TextField fx:id="citta" layoutX="554.0" layoutY="437.0" prefHeight="25.0" prefWidth="177.0" />
+      <Label layoutX="90.0" layoutY="402.0" prefHeight="17.0" prefWidth="177.0" text="Data" textFill="#357ec7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="320.0" layoutY="400.0" prefHeight="17.0" prefWidth="177.0" text="Luogo " textFill="#357ec7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <DatePicker fx:id="data" layoutX="92.0" layoutY="437.0" />
+      <Label fx:id="messaggio" layoutX="90.0" layoutY="578.0" prefHeight="44.0" prefWidth="296.0" textFill="RED" />
+      <Label fx:id="messaggio1" layoutX="90.0" layoutY="636.0" prefHeight="44.0" prefWidth="296.0" textFill="GREEN" />
+      <TextField fx:id="via" layoutX="777.0" layoutY="437.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="civico" layoutX="90.0" layoutY="522.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="provincia" layoutX="319.0" layoutY="522.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="asl_di_appartenenza" layoutX="554.0" layoutY="522.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="distretto" layoutX="777.0" layoutY="522.0" prefHeight="25.0" prefWidth="177.0" />
+      <TextField fx:id="luogo" layoutX="319.0" layoutY="437.0" prefHeight="25.0" prefWidth="177.0" />
+      <Label layoutX="554.0" layoutY="402.0" prefHeight="17.0" prefWidth="177.0" text="Città" textFill="#357ec7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="777.0" layoutY="402.0" prefHeight="17.0" prefWidth="177.0" text="Via" textFill="#357ec7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="90.0" layoutY="491.0" prefHeight="17.0" prefWidth="177.0" text="Civico" textFill="#357ec7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="319.0" layoutY="491.0" prefHeight="17.0" prefWidth="177.0" text="Provincia" textFill="#357ec7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="554.0" layoutY="491.0" prefHeight="17.0" prefWidth="177.0" text="Asl di Appartenzenza" textFill="#357ec7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="777.0" layoutY="491.0" prefHeight="17.0" prefWidth="177.0" text="Distretto" textFill="#357ec7">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Button fx:id="logOut" layoutX="777.0" layoutY="235.0" mnemonicParsing="false" onAction="#log_out" prefHeight="44.0" prefWidth="177.0" style="-fx-background-radius: 30; -fx-background-color: #FF0000;" text="LogOut" textFill="WHITE">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <ImageView fitHeight="160.0" fitWidth="149.0" layoutX="520.0" layoutY="182.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Icone/plus.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="427.0" layoutY="783.0" prefHeight="17.0" prefWidth="168.0" text="© 2022 - Francesco Calcopietro" />
+   </children>
+</AnchorPane>

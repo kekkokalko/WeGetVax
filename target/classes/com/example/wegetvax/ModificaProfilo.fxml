@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.wegetvax.Controllers.ModificaProfiloController">
+   <children>
+      <AnchorPane layoutX="5.0" layoutY="5.0" prefHeight="800.0" prefWidth="986.0">
+         <children>
+            <Label fx:id="password_message" layoutX="132.0" layoutY="531.0" prefHeight="17.0" prefWidth="227.0" textFill="RED" />
+            <VBox layoutX="-10.0" layoutY="-10.0" prefHeight="124.0" prefWidth="1011.0" style="-fx-background-color: #357EC7;" />
+            <TextField fx:id="nome" layoutX="57.0" layoutY="158.0" />
+            <Label layoutX="59.0" layoutY="130.0" text="Nome" textFill="#357ec7" />
+            <TextField fx:id="cognome" layoutX="424.0" layoutY="158.0" />
+            <Label layoutX="60.0" layoutY="202.0" text="Data di nascita" textFill="#357ec7" />
+            <DatePicker fx:id="data_di_nascita" layoutX="57.0" layoutY="231.0" />
+            <TextField fx:id="citta_natale" layoutX="424.0" layoutY="231.0" />
+            <TextField fx:id="citta" layoutX="57.0" layoutY="302.0" />
+            <TextField fx:id="provincia" layoutX="422.0" layoutY="302.0" />
+            <TextField fx:id="CAP" layoutX="740.0" layoutY="302.0" />
+            <Label layoutX="424.0" layoutY="202.0" prefHeight="17.0" prefWidth="78.0" text="Città Natale" textFill="#357ec7" />
+            <Label layoutX="58.0" layoutY="274.0" text="Città" textFill="#357ec7" />
+            <Label layoutX="424.0" layoutY="274.0" text="Provincia" textFill="#357ec7" />
+            <Label layoutX="742.0" layoutY="274.0" text="CAP" textFill="#357ec7" />
+            <Label layoutX="425.0" layoutY="130.0" text="Cognome" textFill="#357ec7" />
+            <Label layoutX="59.0" layoutY="351.0" text="Mail" textFill="#357ec7" />
+            <TextField fx:id="mail" layoutX="57.0" layoutY="380.0" />
+            <TextField fx:id="numero_di_telefono" layoutX="422.0" layoutY="380.0" />
+            <Label layoutX="425.0" layoutY="353.0" text="Tel." textFill="#357ec7" />
+            <TextField fx:id="username" layoutX="57.0" layoutY="465.0" />
+            <Label layoutX="56.0" layoutY="436.0" text="Username" textFill="#357ec7" />
+            <Label layoutX="58.0" layoutY="531.0" text="Password" textFill="#357ec7" />
+            <Label layoutX="428.0" layoutY="530.0" text="Conferma Password" textFill="#357ec7">
+               <font>
+                  <Font name="System Bold" size="13.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="59.0" layoutY="555.0" />
+            <PasswordField fx:id="conferma_password" layoutX="422.0" layoutY="555.0" />
+            <Button layoutX="713.0" layoutY="631.0" mnemonicParsing="false" onAction="#back" prefHeight="49.0" prefWidth="156.0" style="-fx-background-radius: 30; -fx-background-color: GREY;" text="Indietro" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button fx:id="Conferma" layoutX="119.0" layoutY="631.0" mnemonicParsing="false" onAction="#aggiorna" prefHeight="49.0" prefWidth="156.0" style="-fx-background-radius: 30; -fx-background-color: #357EC7;" text="Conferma" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label fx:id="campi_mancanti" layoutX="694.0" layoutY="493.0" prefHeight="49.0" prefWidth="227.0" textFill="RED">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Label fx:id="mail_scorretta" layoutX="97.0" layoutY="351.0" prefHeight="17.0" prefWidth="201.0" textFill="RED" />
+            <Label fx:id="data_scorretta" layoutX="144.0" layoutY="202.0" prefHeight="17.0" prefWidth="274.0" textFill="RED" />
+            <Label fx:id="corretto" layoutX="694.0" layoutY="563.0" prefHeight="35.0" prefWidth="227.0" textFill="GREEN">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <Button fx:id="cancella_profilo" layoutX="332.0" layoutY="715.0" mnemonicParsing="false" onAction="#delete" prefHeight="49.0" prefWidth="315.0" style="-fx-background-radius: 30; -fx-background-color: RED;" text="CANCELLA PROFILO" textFill="WHITE">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Label layoutX="405.0" layoutY="778.0" prefHeight="17.0" prefWidth="168.0" text="© 2022 - Francesco Calcopietro" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
