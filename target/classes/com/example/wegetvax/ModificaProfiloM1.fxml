@@ -4,6 +4,8 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.PasswordField?>
 <?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
@@ -36,12 +38,12 @@
             <Font size="20.0" />
          </font>
       </Button>
-      <Label fx:id="campi_mancanti" layoutX="667.0" layoutY="203.0" prefHeight="49.0" prefWidth="227.0" textFill="RED">
+      <Label fx:id="campi_mancanti" layoutX="377.0" layoutY="241.0" prefHeight="49.0" prefWidth="227.0" textFill="RED">
          <font>
             <Font size="14.0" />
          </font>
       </Label>
-      <Label fx:id="corretto" layoutX="667.0" layoutY="306.0" prefHeight="35.0" prefWidth="227.0" textFill="GREEN">
+      <Label fx:id="corretto" layoutX="377.0" layoutY="315.0" prefHeight="35.0" prefWidth="227.0" textFill="GREEN">
          <font>
             <Font size="14.0" />
          </font>
@@ -52,5 +54,10 @@
          </font>
       </Button>
       <Label layoutX="420.0" layoutY="783.0" prefHeight="17.0" prefWidth="168.0" text="© 2022 - Francesco Calcopietro" />
+      <ImageView fitHeight="150.0" fitWidth="200.0" layoutX="703.0" layoutY="178.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Icone/refresh.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>
