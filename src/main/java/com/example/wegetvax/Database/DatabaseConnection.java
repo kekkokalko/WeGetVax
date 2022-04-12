@@ -12,7 +12,7 @@ public class DatabaseConnection {
 
     //Metodo che effettua l'operazione di istanziare un oggetto
     public static Connection getConnection(){
-        String databaseName= "WeGetVax";
+        String databaseName= "WeGetVax3";
         String databaseUser = "system";
         String databasePassword= "kekko";
         String url ="jdbc:oracle:thin:@localhost:1521:orcl";
