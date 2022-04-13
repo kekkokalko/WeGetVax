@@ -11,4 +11,6 @@ seguito dell’esito di quest’ultima, arrivare all’operazione di vaccinazion
 Deve permettere il monitoraggio dello stato di salute di un Vaccinando quotidianamente.
   
 ### Demo
-https://github.com/kekkokalko/WeGetVax/blob/Francesco/Video_illustrativo.mp4
+https://user-images.githubusercontent.com/94131849/163252350-552832dc-1942-41be-886c-462d3a2ccb0d.mp4
+
+
