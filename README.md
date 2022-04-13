@@ -13,4 +13,5 @@ Deve permettere il monitoraggio dello stato di salute di un Vaccinando quotidian
 ### Demo
 https://user-images.githubusercontent.com/94131849/163252350-552832dc-1942-41be-886c-462d3a2ccb0d.mp4
 
-
+  
+Anno accademico 2021/2022
